@@ -113,31 +113,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayout,new NewFormFragment());
-            ft.commit();
-
-        } else if (id == R.id.nav_slideshow) {
-
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayout,new NewFormFragment());
-            ft.commit();
-
-        } else if (id == R.id.nav_manage) {
-
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayout,new NewFormFragment());
-            ft.commit();
-
-        } else if (id == R.id.nav_share) {
-
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayout,new NewFormFragment());
-            ft.commit();
-
-        } else if (id == R.id.nav_send) {
-
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.frameLayout,new NewFormFragment());
+            ft.replace(R.id.frameLayout,new NewFormFragment()).addToBackStack("MainActivity");
             ft.commit();
 
         }
